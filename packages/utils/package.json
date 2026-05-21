@@ -13,17 +13,26 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
     },
     "./timer": {
       "types": "./dist/timer.d.ts",
       "import": "./dist/esm/timer.js",
-      "require": "./dist/cjs/timer.js"
+      "require": "./dist/cjs/timer.js",
+      "default": "./dist/esm/timer.js"
     },
     "./truncate-if": {
       "types": "./dist/truncate-if.d.ts",
       "import": "./dist/esm/truncate-if.js",
-      "require": "./dist/cjs/truncate-if.js"
+      "require": "./dist/cjs/truncate-if.js",
+      "default": "./dist/esm/truncate-if.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/esm/*.js",
+      "require": "./dist/cjs/*.js",
+      "default": "./dist/esm/*.js"
     }
   },
   "devDependencies": {

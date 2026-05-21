@@ -123,7 +123,7 @@ const Register = React.memo(
     const passwordField = useRef(null);
     const policyCheckbox = useRef(null);
 
-    const mainTitle = '4ga Boards';
+    const mainTitle = 'Phân công công việc Phòng Kiểm tra Nội bộ';
 
     useEffect(() => {
       document.title = `${t('common.register')} | ${mainTitle}`;

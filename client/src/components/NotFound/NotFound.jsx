@@ -12,7 +12,7 @@ const NotFound = React.memo(({ isInitializing, isSocketDisconnected }) => {
   const [t] = useTranslation();
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [showDisconnected, setShowDisconnected] = useState(false);
-  const mainTitle = '4ga Boards';
+  const mainTitle = 'Phân công công việc Phòng Kiểm tra Nội bộ';
 
   useEffect(() => {
     document.title = `${t('common.pageNotFound', { context: 'title' })} | ${mainTitle}`;

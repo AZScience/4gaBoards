@@ -42,6 +42,23 @@ function Root({ store, history }) {
           <Route path={Paths.NOTIFICATIONS} element={<CoreContainer />} />
           <Route path="*" element={<NotFoundContainer />} />
         </Routes>
+        <div
+          style={{
+            position: 'fixed',
+            bottom: 0,
+            left: 0,
+            width: '100%',
+            textAlign: 'center',
+            padding: '6px',
+            fontSize: '12px',
+            color: 'var(--text3, #888)',
+            pointerEvents: 'none',
+            zIndex: 10000,
+            background: 'linear-gradient(transparent, rgba(0,0,0,0.05))',
+          }}
+        >
+          &copy; {new Date().getFullYear()} Phòng Kiểm tra Nội bộ. All rights reserved.
+        </div>
       </ReduxRouter>
     </Provider>
   );

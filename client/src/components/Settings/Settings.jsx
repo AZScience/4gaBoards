@@ -17,7 +17,7 @@ import * as s from './Settings.module.scss';
 
 const Settings = React.memo(({ path, isAdmin, isManager }) => {
   const [t] = useTranslation();
-  const mainTitle = '4ga Boards';
+  const mainTitle = 'Phân công công việc Phòng Kiểm tra Nội bộ';
 
   const getPageTitle = useCallback(() => {
     switch (path) {

@@ -112,7 +112,7 @@ const Login = React.memo(
     const emailOrUsernameField = useRef(null);
     const passwordField = useRef(null);
 
-    const mainTitle = '4ga Boards';
+    const mainTitle = 'Phân công công việc Phòng Kiểm tra Nội bộ';
 
     useEffect(() => {
       document.title = `${t('common.login')} | ${mainTitle}`;

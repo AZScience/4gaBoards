@@ -38,9 +38,6 @@ const AboutSettings = React.memo(({ demoMode, theme, onGettingStartedProjectImpo
 
   return (
     <div className={sShared.wrapper}>
-      <div className={sShared.header}>
-        <h2 className={sShared.headerText}>{t('common.about')}</h2>
-      </div>
       <div>
         <img src={theme === Themes.LIGHT ? logoLightTheme : logoDarkTheme} className={s.logo} alt="4ga Boards" />
         <div className={s.version}>
@@ -51,51 +48,6 @@ const AboutSettings = React.memo(({ demoMode, theme, onGettingStartedProjectImpo
         </div>
         {demoMode && <div className={s.demoMode}>{t('common.demoMode')}</div>}
         <div className={s.links}>
-          <div className={s.link}>
-            <ExternalLink href="https://4gaboards.com">{t('common.website')}</ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href={i18n && i18n.resolvedLanguage === 'pl' ? 'https://docs.4gaboards.com/pl' : 'https://docs.4gaboards.com'}>{t('common.docs')}</ExternalLink>
-          </div>
-          <ExternalLink href="https://www.paypal.com/donate/?hosted_button_id=86RVDTMNLBBPJ">
-            <Button variant={ButtonVariant.DefaultBorder} content={t('common.supportDevelopment')} className={s.donateButton} />
-          </ExternalLink>
-          <div className={s.link}>
-            <ExternalLink href="https://github.com/RARgames/4gaBoards">
-              <Icon type={IconType.GitHub} size={IconSize.Size13} className={s.icon} />
-              {t('common.github')}
-            </ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href="https://x.com/4gaBoards">
-              <Icon type={IconType.X} size={IconSize.Size13} className={s.icon} />
-              {t('common.x')}
-            </ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href="https://www.youtube.com/@4gaBoards">
-              <Icon type={IconType.Youtube} size={IconSize.Size13} className={s.icon} />
-              {t('common.youtube')}
-            </ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href="https://www.linkedin.com/company/4ga-boards">
-              <Icon type={IconType.Linkedin} size={IconSize.Size13} className={s.icon} />
-              {t('common.linkedin')}
-            </ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href="https://www.facebook.com/4gaBoards">
-              <Icon type={IconType.Facebook} size={IconSize.Size13} className={s.icon} />
-              {t('common.facebook')}
-            </ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href="https://4gaboards.com/privacy-policy">{t('common.privacyPolicy')}</ExternalLink>
-          </div>
-          <div className={s.link}>
-            <ExternalLink href="https://4gaboards.com/terms-of-service">{t('common.termsOfService')}</ExternalLink>
-          </div>
           <Button
             variant={ButtonVariant.DefaultBorder}
             content={t('common.importGettingStartedProject')}
