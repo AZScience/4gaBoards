@@ -1,7 +1,7 @@
 FROM node:24-alpine AS base
 
 RUN npm install npm@latest --global
-RUN npm install pnpm@latest --global
+RUN npm install pnpm@11.1.2 --global
 
 FROM base AS packages-build
 
